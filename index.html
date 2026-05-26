@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ── Meta ── -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Md. Mahfuzur Rahman Hridoy — CSE Student, Aspiring Software Engineer & Web Developer based in Khulna, Bangladesh." />
+  <meta name="keywords" content="Mahfuzur Rahman Hridoy, software engineer, web developer, CSE, portfolio, Khulna, Bangladesh" />
+  <meta name="author" content="Md. Mahfuzur Rahman Hridoy" />
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:title" content="Md. Mahfuzur Rahman Hridoy — Portfolio" />
+  <meta property="og:description" content="CSE Student | Aspiring Software Engineer | Web Developer" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.yourportfolio.com" />
+
+  <!-- ── Favicon (emoji fallback) ── -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <title>Md. Mahfuzur Rahman Hridoy — Portfolio</title>
+
+  <!-- ── Stylesheet ── -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     LOADER
+════════════════════════════════════════ -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-logo">&lt;Hridoy /&gt;</div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- ════════════════════════════════════════
+     PARTICLES BACKGROUND
+════════════════════════════════════════ -->
+<canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+<!-- ════════════════════════════════════════
+     SCROLL TO TOP
+════════════════════════════════════════ -->
+<button id="scrollTop" aria-label="Scroll to top">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+  </svg>
+</button>
+
+<!-- ════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <!-- Logo -->
+    <a href="#hero" class="nav-logo">&lt;Hridoy /&gt;</a>
+
+    <!-- Desktop links -->
+    <div class="nav-links" role="list">
+      <a href="#about"         role="listitem">About</a>
+      <a href="#skills"        role="listitem">Skills</a>
+      <a href="#projects"      role="listitem">Projects</a>
+      <a href="#education"     role="listitem">Education</a>
+      <a href="#learning"      role="listitem">Journey</a>
+      <!-- <a href="#certifications" role="listitem">Certs</a> -->
+      <a href="#contact"       role="listitem">Contact</a>
+    </div>
+
+    <!-- Resume CTA -->
+    <a href="assets/resume.pdf" target="_blank" rel="noopener" class="btn btn-outline nav-cta" download>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M12 12v-8m0 8l-3-3m3 3l3-3" />
+      </svg>
+      Resume
+    </a>
+
+    <!-- Hamburger -->
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#learning">Journey</a>
+  <a href="#certifications">Certs</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ════════════════════════════════════════
+     HERO SECTION
+════════════════════════════════════════ -->
+<section id="hero" aria-label="Hero">
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- ── Left: Text ── -->
+      <div class="hero-content">
+        <div class="hero-badge">Available for opportunities</div>
+
+        <h1 class="hero-name">
+          Md. Mahfuzur<br />
+          Rahman <span class="highlight">Hridoy</span>
+        </h1>
+
+        <div class="hero-typing-wrapper" aria-live="polite">
+          <span>I am&nbsp;</span>
+          <span class="typing-text"></span>
+          <span class="cursor" aria-hidden="true"></span>
+        </div>
+
+        <p class="hero-desc">
+          Passionate <strong>Computer Science &amp; Engineering</strong> student at Northern University of Business and Technology Khulna, focused on building practical software solutions & AI, writing clean code, and continuous growth.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+            View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+            Contact Me
+          </a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener" download class="btn btn-outline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M12 12v-8m0 8l-3-3m3 3l3-3" /></svg>
+            Download CV
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">2+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">2+</div>
+            <div class="stat-label">Years Exprince</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Curiosity</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Right: Photo ── -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring">
+          <!-- Replace src with assets/profile.jpg when ready -->
+          <img src="photo/profile.jpeg" alt="Profile photo" class="photo-placeholder" />
+        </div>
+        <!-- Floating decoration badges -->
+        <div class="float-badge">🎓 CSE Student</div>
+        <div class="float-badge">💻 Web Dev</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     ABOUT SECTION
+════════════════════════════════════════ -->
+<section id="about" aria-label="About me">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">// who I am</div>
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <!-- Left: Bio -->
+      <div class="about-text">
+        <p>
+          I am a passionate <strong>Computer Science and Engineering</strong> student focused on software development, SQA Enthusiast, and continuous learning.
+        </p>
+        <p>
+          I have hands-on knowledge of <strong>web development</strong> using HTML, CSS, JavaScript, and I am actively expanding my expertise in <strong>Python, SQL, C++, and Java</strong>. I also understand <strong>Software Quality Assurance (SQA)</strong> and software testing practices.
+        </p>
+        <p>
+          My goal is to become a professional Software Engineer by building practical projects, contributing to meaningful products, and continuously improving my technical expertise.
+        </p>
+
+        <!-- Quick info grid -->
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="info-label">Name</div>
+            <div class="info-value">Md. Mahfuzur Rahman Hridoy</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Location</div>
+            <div class="info-value">Khulna, Bangladesh</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Email</div>
+            <div class="info-value">mahfuzhridoy712@gmail.com</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Phone</div>
+            <div class="info-value">+8801862278949</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">University</div>
+            <div class="info-value">Northern University of Business and Technology Khulna</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Website</div>
+            <div class="info-value">www.yourportfolio.com</div>
+          </div>
+        </div>
+
+        <!-- Social links -->
+        <div class="about-socials">
+          <a href="https://github.com/Mahfuz-Hridoy" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.57v-2.23c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013.01-.41c1.02.01 2.05.14 3.01.41 2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.6-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/md-mahfuzur-rahman-hridoy-4aa586286/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.44c.98 0 1.79-.77 1.79-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Highlights -->
+      <div class="about-highlights">
+        <div class="glass-card highlight-card reveal">
+          <div class="hl-icon">🎯</div>
+          <div>
+            <div class="hl-title">Goal-Oriented</div>
+            <div class="hl-desc">Committed to becoming a professional Software Engineer by building meaningful, real-world applications.</div>
+          </div>
+        </div>
+        <div class="glass-card highlight-card reveal">
+          <div class="hl-icon">🧪</div>
+          <div>
+            <div class="hl-title">QA & Testing</div>
+            <div class="hl-desc">Knowledgeable in Software Quality Assurance, testing methodologies, and debugging practices.</div>
+          </div>
+        </div>
+        <div class="glass-card highlight-card reveal">
+          <div class="hl-icon">🌐</div>
+          <div>
+            <div class="hl-title">Full-Stack Curiosity</div>
+            <div class="hl-desc">Exploring the full spectrum from frontend design to backend APIs and database architecture.</div>
+          </div>
+        </div>
+        <div class="glass-card highlight-card reveal">
+          <div class="hl-icon">📈</div>
+          <div>
+            <div class="hl-title">Continuous Learner</div>
+            <div class="hl-desc">Always leveling up — currently deep-diving into Python, SQL, and modern software engineering practices.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     SKILLS SECTION
+════════════════════════════════════════ -->
+<section id="skills" aria-label="Skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">// what I know</div>
+      <h2 class="section-title">Technical <span>Skills</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid">
+
+      <!-- Frontend -->
+      <div class="glass-card skill-category reveal">
+        <div class="cat-header">
+          <div class="cat-icon" style="background:rgba(99,179,237,0.12);color:var(--accent)">🖥️</div>
+          <div class="cat-title">Frontend</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="HTML5 logo"><span class="skill-name">HTML5</span></span>
+          <span class="skill-tag"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="CSS3 logo"><span class="skill-name">CSS3</span></span>
+          <span class="skill-tag"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="JavaScript logo"><span class="skill-name">JavaScript</span></span>
+          <span class="skill-tag">📱<span class="skill-name">Responsive Design</span></span>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="glass-card skill-category reveal">
+        <div class="cat-header">
+          <div class="cat-icon" style="background:rgba(159,122,234,0.12);color:var(--accent-3)">⚡</div>
+          <div class="cat-title">Programming Languages</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="JavaScript logo"><span class="skill-name">JavaScript</span></span>
+          <span class="skill-tag learning"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo"><span class="skill-name">Python ✦</span></span>
+          <span class="skill-tag"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" alt="C++ logo"><span class="skill-name">C++</span></span>
+          <span class="skill-tag"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo"><span class="skill-name">Java</span></span>
+        </div>
+      </div>
+
+      <!-- Backend & DB -->
+      <div class="glass-card skill-category reveal">
+        <div class="cat-header">
+          <div class="cat-icon" style="background:rgba(118,228,247,0.12);color:var(--accent-2)">🗄️</div>
+          <div class="cat-title">Backend &amp; Database</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag"><img class="skill-logo" src="data:image/png;base64,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" alt="MySQL logo"><span class="skill-name">MySQL</span></span>
+          <span class="skill-tag">🔗<span class="skill-name">REST API</span></span>
+          <span class="skill-tag">🗄️<span class="skill-name">Database Design</span></span>
+        </div>
+      </div>
+
+      <!-- Other -->
+      <div class="glass-card skill-category reveal">
+        <div class="cat-header">
+          <div class="cat-icon" style="background:rgba(246,173,85,0.12);color:#f6ad55">🔧</div>
+          <div class="cat-title">Other Skills</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">🧪<span class="skill-name">SQA / QA Testing</span></span>
+          <span class="skill-tag">🐞<span class="skill-name">Debugging</span></span>
+          <span class="skill-tag">🧩<span class="skill-name">Problem Solving</span></span>
+          <span class="skill-tag"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="Git logo"><span class="skill-name">Git &amp; GitHub</span></span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Note about ✦ learning -->
+    <p style="text-align:center;margin-top:28px;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted)">
+      <span style="color:#f6ad55">✦</span> Currently learning
+    </p>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     PROJECTS SECTION
+════════════════════════════════════════ -->
+<section id="projects" aria-label="Projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">// what I built</div>
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs" role="tablist" aria-label="Project categories">
+      <button class="filter-tab active" data-filter="all" role="tab">All</button>
+      <button class="filter-tab" data-filter="fullstack"  role="tab">Full-Stack</button>
+      <button class="filter-tab" data-filter="database"   role="tab">Database</button>
+      <button class="filter-tab" data-filter="upcoming"   role="tab">Upcoming</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <article class="glass-card project-card reveal" data-category="fullstack">
+        <!-- Replace with: <img src="assets/project1.png" alt="Library Management System screenshot" class="project-img"> -->
+        <div class="project-img-placeholder" aria-label="Library Management System preview">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">php</span>
+            <span class="project-tag">MySQL</span>
+            <span class="project-tag">REST API</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <h3 class="project-title">Bagpack_Store</h3>
+          <p class="project-desc">A full-stack library management system with REST API and CRUD functionality. Handles books, members, and transactions with a clean web interface.</p>
+          <div class="project-links">
+            <a href="https://github.com/Mahfuz-Hridoy/Bagpack_Store.git" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repository">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.57v-2.23c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013.01-.41c1.02.01 2.05.14 3.01.41 2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.6-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+              Code
+            </a>
+            <a href="...." target="_blank" rel="noopener" class="project-link" aria-label="Live demo">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="glass-card project-card reveal" data-category="database">
+        <div class="project-img-placeholder" aria-label="Billing System preview">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <h3 class="project-title">Budget_tracker</h3>
+          <p class="project-desc">Budget Tracker Website is a personal finance management web application designed to help users track their savings and daily expenses efficiently. The system allows users to set their main budget or savings amount..</p>
+          <div class="project-links">
+            <a href="https://github.com/Mahfuz-Hridoy/Budget_tracker.git" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repository">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.57v-2.23c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013.01-.41c1.02.01 2.05.14 3.01.41 2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.6-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+              Code
+            </a>
+            <a href="..." target="_blank" rel="noopener" class="project-link" aria-label="Live demo">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 — Coming Soon -->
+      <article class="glass-card project-card reveal" data-category="upcoming" data-status="coming-soon">
+        <div class="project-img-placeholder" style="background:linear-gradient(135deg,#111827,#1e2a40)" aria-label="Upcoming project">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" /></svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag" style="color:#a0aec0;border-color:rgba(160,174,192,0.2)">Coming Soon</span>
+          </div>
+          <h3 class="project-title">Upcoming Project</h3>
+          <p class="project-desc">Something exciting is in the works. Stay tuned for the next build — it's going to be a great one.</p>
+          <div class="project-links">
+            <span class="project-link" style="opacity:0.4;cursor:not-allowed">🔒 Not Available Yet</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     EDUCATION SECTION
+════════════════════════════════════════ -->
+<section id="education" aria-label="Education">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">// where I learn</div>
+      <h2 class="section-title">My <span>Education</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="glass-card edu-card reveal">
+      <div class="edu-icon-wrap" aria-hidden="true">🎓</div>
+      <div>
+        <div class="edu-degree">B.Sc in Computer Science &amp; Engineering</div>
+        <div class="edu-institution">Northern University of Business and Technology Khulna</div>
+        <div class="edu-meta">
+          <div class="edu-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Session: 2023–2027
+          </div>
+          <!-- <div class="edu-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
+           CGPA: X.XX / 4.00
+          </div> -->
+          <div class="edu-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            Khulna, Bangladesh
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     LEARNING JOURNEY SECTION
+════════════════════════════════════════ -->
+<section id="learning" aria-label="Current learning journey">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">// what I'm exploring</div>
+      <h2 class="section-title">Learning <span>Journey</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="learning-grid">
+
+      <div class="glass-card learning-card reveal">
+        <div class="learning-num">01</div>
+        <div>
+          <div class="learning-title">Python for Backend</div>
+          <div class="learning-desc">Exploring Python for backend development, scripting, and automation workflows to complement web skills.</div>
+        </div>
+      </div>
+
+      <div class="glass-card learning-card reveal">
+        <div class="learning-num">02</div>
+        <div>
+          <div class="learning-title">SQL &amp; Database Management</div>
+          <div class="learning-desc">Deepening knowledge of relational databases, query optimization, and data modeling techniques.</div>
+        </div>
+      </div>
+
+      <div class="glass-card learning-card reveal">
+        <div class="learning-num">03</div>
+        <div>
+          <div class="learning-title">Software Testing &amp; QA</div>
+          <div class="learning-desc">Exploring modern QA methodologies, test case design, and quality assurance best practices.</div>
+        </div>
+      </div>
+
+      <div class="glass-card learning-card reveal">
+        <div class="learning-num">04</div>
+        <div>
+          <div class="learning-title">Full-Stack Development</div>
+          <div class="learning-desc">Building complete applications from scratch — connecting frontend interfaces with backend systems and databases.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     CERTIFICATIONS SECTION
+════════════════════════════════════════ -->
+<!-- <section id="certifications" aria-label="Certifications">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">// credentials</div>
+      <h2 class="section-title">My <span>Certifications</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="cert-grid">
+
+      <div class="glass-card cert-card reveal">
+        <div class="cert-badge" aria-hidden="true">🌐</div>
+        <div>
+          <div class="cert-name">Web Development Certificate</div>
+          <div class="cert-issuer">Issuing Organization · 20XX</div>
+        </div>
+      </div>
+
+      <div class="glass-card cert-card reveal">
+        <div class="cert-badge" aria-hidden="true">⚡</div>
+        <div>
+          <div class="cert-name">JavaScript Fundamentals</div>
+          <div class="cert-issuer">Issuing Organization · 20XX</div>
+        </div>
+      </div>
+
+      <div class="glass-card cert-card reveal">
+        <div class="cert-badge" aria-hidden="true">🧪</div>
+        <div>
+          <div class="cert-name">Software Testing Basics</div>
+          <div class="cert-issuer">Issuing Organization · 20XX</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section> -->
+
+
+<!-- ════════════════════════════════════════
+     ACHIEVEMENTS SECTION
+════════════════════════════════════════ -->
+<section id="achievements" aria-label="Achievements">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">// milestones</div>
+      <h2 class="section-title">My <span>Achievements</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="ach-list">
+      <div class="glass-card ach-item reveal">
+        <div class="ach-icon" aria-hidden="true"></div>
+        <div class="ach-text"><strong>Built Multiple Academic Projects</strong> — Developed full-stack and database-driven applications including a REST API library system and billing management tool.</div>
+      </div>
+      <div class="glass-card ach-item reveal">
+        <div class="ach-icon" aria-hidden="true"></div>
+        <div class="ach-text"><strong>Participated in Coding </strong> — Actively engaged in algorithmic challenges and coding exercises to sharpen logical thinking and programming skills.</div>
+      </div>
+      <div class="glass-card ach-item reveal">
+        <div class="ach-icon" aria-hidden="true"></div>
+        <div class="ach-text"><strong>Actively Improving Development Skills</strong> — Consistently learning new technologies, completing online courses, and applying knowledge through practical projects.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     CONTACT SECTION
+════════════════════════════════════════ -->
+<section id="contact" aria-label="Contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">// get in touch</div>
+      <h2 class="section-title">Contact <span>Me</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Left: Info -->
+      <div class="contact-info reveal">
+        <h3>Let's work together</h3>
+        <p>I'm open to internships, collaborations, and entry-level software engineering opportunities. Feel free to reach out — I'd love to connect!</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="c-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+            </div>
+            <div>
+              <div class="c-label">Email</div>
+              <div class="c-value">mahfuzhridoy712@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+            </div>
+            <div>
+              <div class="c-label">Phone</div>
+              <div class="c-value">+8801872278949</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            </div>
+            <div>
+              <div class="c-label">Location</div>
+              <div class="c-value">Khulna, Bangladesh</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="contact-socials" aria-label="Social links">
+          <a href="https://github.com/Mahfuz-Hridoy?tab=repositories" target="_blank" rel="noopener" class="cs-link" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.57v-2.23c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013.01-.41c1.02.01 2.05.14 3.01.41 2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.6-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/md-mahfuzur-rahman-hridoy-4aa586286/" target="_blank" rel="noopener" class="cs-link" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 .77.79 0 1.73v20.54C0 23.23.79 24 1.77 24h20.44c.98 0 1.79-.77 1.79-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+          <a href="mahfuzhridoy712@gmail.com" class="cs-link" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="glass-card contact-form-card reveal">
+        <form id="contactForm" novalidate aria-label="Contact form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Md. Example" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Internship opportunity, collaboration…" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project or opportunity…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>
+            Send Message
+          </button>
+          <div class="form-success" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-logo">&lt;Hridoy /&gt;</div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer-copy">
+      Designed &amp; built <span></span> by Md. Mahfuzur Rahman Hridoy &mdash; Bangladesh
+    </p>
+  </div>
+</footer>
+
+<!-- ── Scripts ── -->
+<script src="main.js" defer></script>
+</body>
+</html>
