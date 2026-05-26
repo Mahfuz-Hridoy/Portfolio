@@ -16,8 +16,7 @@ I am passionate about software development, problem-solving, and continuously le
 
 ## 🚀 Live Demo
 
-🔗 [View Portfolio]([https://your-portfolio-link.vercel.app](https://mahfuz-hridoy.github.io/Portfolio/))
-
+🔗 [(https://mahfuz-hridoy.github.io/Portfolio/)
 ---
 
 ## 🛠️ Built With
