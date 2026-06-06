@@ -138,6 +138,5 @@ portfolio/
 │   ├── profile.jpg
 │   ├── resume.pdf
 │   ├── project1.png
-│   ├── project2.png
 │
 └── README.md
